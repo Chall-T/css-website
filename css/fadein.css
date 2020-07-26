@@ -1,0 +1,33 @@
+.animacja {
+    -webkit-animation-duration: var(--predkosc);
+    animation-duration: var(--predkosc);
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+ }
+ 
+ @-webkit-keyframes dol {
+    0% {
+       opacity: 0;
+       -webkit-transform: translateY(-20px);
+    }
+    100% {
+       opacity: 1;
+       -webkit-transform: translateY(0);
+    }
+ }
+ 
+ @keyframes dol {
+    0% {
+       opacity: 0;
+       transform: translateY(-20px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateY(0);
+    }
+ }
+ 
+ .dol {
+    -webkit-animation-name: dol;
+    animation-name: dol;
+ }
